@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "959794896244",
+    "firebase_url": "https://nishyy-brew-crew-c3864.firebaseio.com",
+    "project_id": "nishyy-brew-crew-c3864",
+    "storage_bucket": "nishyy-brew-crew-c3864.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:959794896244:android:712d4d8c9c534e531a6021",
+        "android_client_info": {
+          "package_name": "com.nishanth.brew_crew"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "959794896244-mamijg8rbu8tpck2tmbhakd0ltduu2ss.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDvoVa0m53biGesVVSWtIUJhpIr2is6eHI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "959794896244-mamijg8rbu8tpck2tmbhakd0ltduu2ss.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
