@@ -1,17 +1,17 @@
 import 'package:brew_crew/models/brew.dart';
 import 'package:brew_crew/screens/home/brew_list.dart';
 import 'package:brew_crew/screens/home/settings_form.dart';
+import 'package:brew_crew/services/auth.dart';
 import 'package:brew_crew/services/database.dart';
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 
 class Home extends StatelessWidget {
-  //final AuthService _auth = AuthService();
+  final AuthService _auth = AuthService();
 
   @override
   Widget build(BuildContext context) {
-
-   //Bottom Sheet logic
+    //Bottom Sheet logic
     void _showSettingsPanel() {
       showModalBottomSheet(
           context: context,
@@ -36,7 +36,7 @@ class Home extends StatelessWidget {
               icon: Icon(Icons.person),
               label: Text('logout'),
               onPressed: () async {
-                //await _auth.signOut();
+                await _auth.signout();
               },
             ),
             FlatButton.icon(
@@ -47,7 +47,14 @@ class Home extends StatelessWidget {
                 label: Text('Settings'))
           ],
         ),
-        body: BrewList(),
+        body: Container(
+          child: BrewList(),
+          decoration: BoxDecoration(
+              image: DecorationImage(
+            image: AssetImage('assets/coffee_bg.png'),
+            fit: BoxFit.cover,
+          )),
+        ),
       ),
     );
   }
